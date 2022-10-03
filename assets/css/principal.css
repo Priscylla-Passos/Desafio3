@@ -1,0 +1,100 @@
+.container__principal{
+    display: flex;
+    justify-content: baseline;
+   
+}
+.principal__inputs-atividade{
+    width: 424px;
+    height: 44px;
+    padding: 10px 198px 18px 12px;
+    gap: 4px;
+    border: 1px solid var(--verde_botao);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 33px 39px 26px 49px;
+}
+
+#dias-da-semana{
+   width: 13.125rem; 
+   height: 2.75rem;
+   border-radius: .625rem;
+   border: 1px solid var(--verde_botao);
+   padding: 10px 84px 10px 12px;
+   padding: 12px;
+   margin: 34px 19px 31px 0px;
+
+}
+ 
+ .principal__select_editavel{
+    width: 6.375rem;
+    height: .75rem;
+    position: relative;
+    background-color: var(--branco);
+    border: 1px solid var(--verde_botao);
+    border-radius: 10px;
+    padding: 12px;
+    gap: .25rem ;
+    margin: 2.125rem 1.75rem 2rem .1rem;
+    
+} 
+
+.principal__select_editavel select{
+    width: 6.375rem;
+    height: 2.25rem;
+    position: absolute;
+    font-size: 14px;
+    font-family: var(--font_nunito);
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    top: 0px;
+    
+}
+
+.principal__select_editavel input{
+    position: absolute;
+    width: 60px ;
+    height: 10px;
+    top: 0px;
+    padding: 1px;
+    font-size: 14px;
+    font-family: var(--font_nunito);
+    font-weight: 400;
+    line-height: 20px;
+    border:none;
+    padding: 12px;
+    
+}
+.principal__select_editavel select:focus, .principal__select_editavel input:focus{
+    outline: none;
+}
+
+.principal__botoes{
+    width: 155px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    color: var(--branco);
+    margin-right:27px;
+    margin-top: 34px;
+    border-radius: 10px;
+    border: none;
+
+}
+.principal__bt-adicionar{
+    background-image: url("../img/icon_mais.svg");
+    background-color: var(--verde_botao);
+    padding-top: 15px;
+    padding-left: 35px;
+   
+}   
+     
+.principal__bt-excluir-todos{
+   background-image: url("../img/icon_menos.svg");
+   background-color: var(--vermelho_botao);
+   background-position: 10%;
+   text-align: center;
+   padding-left: 50px;
+   padding-top: 15px;
+
+}

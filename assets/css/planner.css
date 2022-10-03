@@ -1,0 +1,150 @@
+.planner__horario-horario{
+    position: absolute;
+    width: 85px; 
+    font-family: var(font_noto-sans);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+    color: var(--hora_data);
+    background: var(--branco);
+    margin-left: 16px;
+    padding: 32px 5px 33px 5px;
+   
+}
+
+.planner__horario-um{
+    width: 85px;
+    position: absolute;
+    font-family: var(font_noto-sans);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+    background: var(--bt_horario_azul);
+    margin-left: 16px;
+    padding: 32px 5px 33px 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--borda_botao_horario);
+    
+}
+
+
+.planner-dia{
+    width: 150px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--branco);
+    box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+    border-radius: 9px 9px 0px 0px;
+    border: none;
+   
+} 
+
+
+.planner__segunda{
+    background-color: var(--segunda);
+    margin-left: 120px;
+}
+
+.planner__terca{
+    background-color: var(--terca);
+    margin-left: 28px;
+}
+
+.planner__quarta{
+    background-color: var(--azul);
+    margin-left: 28px;
+}
+
+.planner__quinta{
+    background-color: var(--quinta);
+    margin-left: 28px;
+}
+
+.planner__sexta{
+    background-color: var(--sexta);
+    margin-left: 28px;
+}
+
+.planner__sabado{
+    background-color: var(--sabado);
+    margin-left: 28px;
+}
+
+.planner__domingo{
+    background-color: var(--domingo);
+    margin-left: 28px;
+}
+
+ .container__scroll{
+    height: 25px;
+    width: 1155px;
+    overflow-y: auto;
+    background-color: var(--branco);
+    border-radius: 10px;
+    margin: 12px auto;
+}
+.scroll{
+   width: 1440px; 
+
+}
+ 
+.flipped, .container__scroll{
+    transform: rotateX(180deg);
+}
+
+.container__scroll::-webkit-scrollbar{
+    width: 12px; 
+}
+
+.container__scroll::-webkit-scrollbar-track{
+    background: var(--branco);
+   /* border-radius: 10px;*/
+}
+
+.container__scroll::-webkit-scrollbar-thumb{
+    background-color: var(--scroll);
+    border-radius: 20px;
+    border: 3px solid var(--branco);
+}
+
+.container__scroll::-webkit-scrollbar-thumb:hover{
+    background: var(--hover_scroll);
+} 
+
+.atividades{
+   display: flex;
+   flex-direction: column;
+  
+   
+}
+
+.atividades__planner{
+    width: 512px;
+    height: 65px;
+    background: linear-gradient(var(--card_linear_gradiente-um), var(--card_linear_gradientee-dois));
+    border: 1px solid var(--branco);
+    border-radius: 15px;
+    box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(10.5px);
+    margin-left: 150px;
+    margin-top: 10px;
+    border-left-width: 14px;
+    border-left-color: var(--azul);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--cor_texto_banner);
+    padding: 10px 42px 10px 28px;
+    
+}
+
+
+ 

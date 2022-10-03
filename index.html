@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento da Semana</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__banner">
+            <h1 class="cabecalho__texto-principal">Planejamento Semanal</h1>
+            <p class="cabecalho__texto-secundario">Utilize o formulário para adicionar novas tarefas:</p>
+        </div>
+        <div class="cabecalho__botoes">
+            <button class="cabecalho__bt_salvar cabecalho__botao ">Salvar localStorage</button>
+            <button class="cabecalho__bt_excluir cabecalho__botao">Excluir localStorage</button>
+        </div>
+        <div class="cabecalho__data-hora">
+            <p  id="hora"></p>
+            <div  id="data"></div>
+        </div>
+    </header>
+    <main>
+        <section class="principal">
+            <form class="principal__inputs container__principal" autocomplete="off" >
+                <input type="text" placeholder="Atividade" required class="principal__inputs-atividade" id="atividade" autofocus>
+                <select name="semana" id="dias-da-semana">
+                    <option value="segunda">Segunda - Feira</option>
+                    <option value="terca">Terça - Feira</option>
+                    <option value="quarta">Quarta - Feira</option>
+                    <option value="quinta">Quinta - Feira</option>
+                    <option value="sexta">Sexta - Feira</option>
+                    <option value="sabado">Sábado</option>
+                    <option value="sabado">Domingo</option>
+                </select>
+                <div class="principal__select_editavel container__principal" >
+                    <select onchange="this.nextElementSibling.value=this.value" id="horario">
+                        <option value=""></option>
+                        <option value="00h12m">00h12m</option>
+                        <option value="10h30m">10h30m</option>
+                        <option value="11h00m">11h00m</option>
+                        <option value="13h10m">13h10m</option>
+                        <option value="15h00m">15h00m</option>
+                        <option value="16h55m">16h55m</option>
+                        <option value="17h25m">17h25m</option>
+                        <option value="22h15m">22h15m</option>
+                        
+                    </select>
+                        <input type="text" name="format" value=""/>    
+                </div>
+                <button class="principal__bt-adicionar container__principal principal__botoes" >Adicionar Atividade</button>
+                <button class="principal__bt-excluir-todos container__principal principal__botoes">Excluir Todos</button>
+            </form>
+        </section>
+         <section class="planner__horario">
+            <div class="planner__horario-horario">horário</div></section>
+          
+        <section class="planner__dias-semana">
+            <button class="planner-dia planner__segunda" id="segunda">Segunda-Feira</button>
+            <button class="planner-dia planner__terca">Terça-Feira</button>
+            <button class="planner-dia planner planner__quarta">Quarta-Feira</button>
+            <button class="planner-dia planner__quinta">Quinta- Feira</button>
+            <button class="planner-dia planner__sexta">Sexta-Feira</button>
+            <button class="planner-dia planner__sabado">Sábado</button>
+            <button class="planner-dia planner__domingo">Domingo</button>
+        </section>
+        <div class="container__scroll flipped">
+            <div class="scroll"></div>
+        </div>
+        <section class="atividades"></section>
+
+        <script src="./assets/js/index.js"></script>
+    </main>
+</body>
+</html>

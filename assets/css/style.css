@@ -1,0 +1,47 @@
+@import url(cabecalho.css);
+@import url(principal.css);
+@import url(planner.css);
+
+
+:root{
+    --branco: #FFFFFF;
+    --azul: #6688FF;
+    --verde_botao: #2CBE82;
+    --vermelho_botao: #DA2B40;
+    --hora_data: #3B3E45;
+    --segunda: #FFA246;
+    --terca: #35E185;
+    --quinta: #B266FF;
+    --sexta: #66D1FF;
+    --sabado: #FF66D4;
+    --domingo: #FF6666;
+    --conflito: #F55D5D;
+    --bt_apagar: #98031E;
+    --background:rgba(229, 229, 229, 0.41);
+    --scroll:#DCDFE3;
+    --hover_scroll: #555;
+    --bt_horario_azul: rgba(102, 136, 255, 0.4);
+    --borda_botao_horario: #DCDFE3;
+    --bt_horario_vermelho: rgba(245, 93, 93, 0.4);
+    --card_linear_gradiente-um: rgba(228, 240, 248, 0.42);
+    --card_linear_gradientee-dois: rgba(255, 255, 255, 0.34) ; 
+    --cor_texto_banner:#333333; 
+    --aba-vermelha:#F55D5D;
+    
+    --font_poppins: 'Poppins', sans-serif;
+    --font_nunito: 'Nunito', sans-serif;
+    --font_noto-sans:'Noto Sans', sans-serif;
+}
+body{
+    font-family: var(--font_poppins);
+    height: 1024px;
+    background-color: var(--background);
+    background-image: url(../img/bola-LogoCompasso.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+      
+}
+
+
+
