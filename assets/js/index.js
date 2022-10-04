@@ -1,9 +1,12 @@
 let atividade = document.querySelector("#atividade");
 let horario = document.querySelector("#horario");
+let horario_input = document.querySelector("#horario_input");
 let dia = document.querySelector("#dias-da-semana");
 let listaAtividade = [];
 let btAdicionar = document.querySelector(".principal__bt-adicionar");
+let btexcluirTodos = document.querySelector(".principal__bt-excluir-todos")
 let btsegunda = document.querySelector("#segunda");
+let btterca = document.querySelector("#terca");
 let containerAtividades = document.querySelector(".atividades");
 const data = new Date();
 const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
@@ -12,6 +15,8 @@ const mes = meses[data.getMonth()];
 const diaAtual = data.getDate();
 const hora = data.getHours();
 const minutos = data.getMinutes();
+atividade="block";
+horario ="block";
 const zeroFill = n => {
     return ('0' + n).slice(-2);
 }
@@ -21,14 +26,30 @@ const zeroFill = n => {
     
 btAdicionar.addEventListener("click", function(e){
     e.preventDefault();
+   
     listaAtividade.push({
     atividade:atividade.value, 
     horario:horario.value,
+    horario_input:horario_input.value,
     dia:dia.value
 });
+        console.log(listaAtividade)
     atividade.value ="";
-  
+    
 })
+
+
+
+
+btexcluirTodos.addEventListener("click", function(e){
+    e.preventDefault();
+    listaAtividade.splice(0, listaAtividade.length);
+    
+    
+
+    })
+
+
 
 btsegunda.addEventListener("click", function(e){
     e.preventDefault();
@@ -52,6 +73,4 @@ btsegunda.addEventListener("click", function(e){
     })
 
 })
-
-
 

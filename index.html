@@ -28,7 +28,7 @@
     <main>
         <section class="principal">
             <form class="principal__inputs container__principal" autocomplete="off" >
-                <input type="text" placeholder="Atividade" required class="principal__inputs-atividade" id="atividade" autofocus>
+                <input type="text" placeholder="Atividade" class="principal__inputs-atividade" id="atividade" autofocus required>
                 <select name="semana" id="dias-da-semana">
                     <option value="segunda">Segunda - Feira</option>
                     <option value="terca">Terça - Feira</option>
@@ -51,10 +51,10 @@
                         <option value="22h15m">22h15m</option>
                         
                     </select>
-                        <input type="text" name="format" value=""/>    
+                        <input type="text" name="format" value="" id="horario_input"/>    
                 </div>
                 <button class="principal__bt-adicionar container__principal principal__botoes" >Adicionar Atividade</button>
-                <button class="principal__bt-excluir-todos container__principal principal__botoes">Excluir Todos</button>
+                <button class="principal__bt-excluir-todos container__principal principal__botoes" >Excluir Todos</button>
             </form>
         </section>
          <section class="planner__horario">
@@ -62,7 +62,7 @@
           
         <section class="planner__dias-semana">
             <button class="planner-dia planner__segunda" id="segunda">Segunda-Feira</button>
-            <button class="planner-dia planner__terca">Terça-Feira</button>
+            <button class="planner-dia planner__terca" id="terca">Terça-Feira</button>
             <button class="planner-dia planner planner__quarta">Quarta-Feira</button>
             <button class="planner-dia planner__quinta">Quinta- Feira</button>
             <button class="planner-dia planner__sexta">Sexta-Feira</button>
@@ -72,7 +72,10 @@
         <div class="container__scroll flipped">
             <div class="scroll"></div>
         </div>
-        <section class="atividades"></section>
+        <section class="atividades">
+            <div id="atividade"></div>
+            <div id="horario"></div>
+        </section>
 
         <script src="./assets/js/index.js"></script>
     </main>

@@ -30,7 +30,7 @@
     padding: 32px 5px 33px 5px;
     margin-top: 10px;
     border-bottom: 1px solid var(--borda_botao_horario);
-    
+   
 }
 
 
@@ -53,9 +53,18 @@
     margin-left: 120px;
 }
 
+.planner__segunda:hover{
+    width: 165px;
+    height: 55px;
+}
+
 .planner__terca{
     background-color: var(--terca);
     margin-left: 28px;
+}
+.planner__terca:hover{
+    width: 165px;
+    height: 55px;
 }
 
 .planner__quarta{
@@ -63,24 +72,46 @@
     margin-left: 28px;
 }
 
+.planner__quarta:hover{
+    width: 165px;
+    height: 45px;
+}
+
 .planner__quinta{
     background-color: var(--quinta);
     margin-left: 28px;
+}
+
+.planner__quinta:hover{
+    width: 165px;
+    height: 45px;
 }
 
 .planner__sexta{
     background-color: var(--sexta);
     margin-left: 28px;
 }
+.planner__sexta:hover{
+    width: 165px;
+    height: 45px;
+}
 
 .planner__sabado{
     background-color: var(--sabado);
     margin-left: 28px;
 }
+.planner__sabado:hover{
+    width: 165px;
+    height: 45px;
+}
 
 .planner__domingo{
     background-color: var(--domingo);
     margin-left: 28px;
+}
+.planner__domingo:hover{
+    width: 165px;
+    height: 45px;
 }
 
  .container__scroll{
@@ -106,7 +137,7 @@
 
 .container__scroll::-webkit-scrollbar-track{
     background: var(--branco);
-   /* border-radius: 10px;*/
+  
 }
 
 .container__scroll::-webkit-scrollbar-thumb{
@@ -137,7 +168,7 @@
     margin-left: 150px;
     margin-top: 10px;
     border-left-width: 14px;
-    border-left-color: var(--azul);
+    border-left-color: var(--segunda);
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
@@ -146,5 +177,21 @@
     
 }
 
+.atividade__planner-botao{
+    font-family: var(--font-nunito);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--branco);
+    background: var(--bt_apagar);
+    padding: 5px 10px;
+    position: absolute;
+    margin-left: 455px;
+    border-radius: 8px;
+   
+
+
+
+}
 
  
