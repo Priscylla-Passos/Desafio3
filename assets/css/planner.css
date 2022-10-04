@@ -53,70 +53,70 @@
     margin-left: 120px;
 }
 
-.planner__segunda:hover{
+/* .planner__segunda:hover{
     width: 165px;
     height: 55px;
-}
+} */
 
 .planner__terca{
     background-color: var(--terca);
     margin-left: 28px;
 }
-.planner__terca:hover{
+/* .planner__terca:hover{
     width: 165px;
     height: 55px;
-}
+} */
 
 .planner__quarta{
     background-color: var(--azul);
     margin-left: 28px;
 }
 
-.planner__quarta:hover{
+/* .planner__quarta:hover{
     width: 165px;
-    height: 45px;
-}
+    height: 55px;
+} */
 
 .planner__quinta{
     background-color: var(--quinta);
     margin-left: 28px;
 }
 
-.planner__quinta:hover{
+/* .planner__quinta:hover{
     width: 165px;
-    height: 45px;
-}
+    height: 55px;
+} */
 
 .planner__sexta{
     background-color: var(--sexta);
     margin-left: 28px;
 }
-.planner__sexta:hover{
+/* .planner__sexta:hover{
     width: 165px;
-    height: 45px;
-}
+    height: 55px;
+} */
 
 .planner__sabado{
     background-color: var(--sabado);
     margin-left: 28px;
 }
-.planner__sabado:hover{
+/* .planner__sabado:hover{
     width: 165px;
-    height: 45px;
-}
+    height: 55px;
+} */
 
 .planner__domingo{
     background-color: var(--domingo);
     margin-left: 28px;
 }
-.planner__domingo:hover{
+.planner__botao-clicked{
     width: 165px;
-    height: 45px;
+    height: 55px;
 }
 
  .container__scroll{
-    height: 25px;
-    width: 1155px;
+    height: 22px;
+    width: 1345px;
     overflow-y: auto;
     background-color: var(--branco);
     border-radius: 10px;

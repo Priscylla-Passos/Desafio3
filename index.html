@@ -36,22 +36,10 @@
                     <option value="quinta">Quinta - Feira</option>
                     <option value="sexta">Sexta - Feira</option>
                     <option value="sabado">Sábado</option>
-                    <option value="sabado">Domingo</option>
+                    <option value="domingo">Domingo</option>
                 </select>
                 <div class="principal__select_editavel container__principal" >
-                    <select onchange="this.nextElementSibling.value=this.value" id="horario">
-                        <option value=""></option>
-                        <option value="00h12m">00h12m</option>
-                        <option value="10h30m">10h30m</option>
-                        <option value="11h00m">11h00m</option>
-                        <option value="13h10m">13h10m</option>
-                        <option value="15h00m">15h00m</option>
-                        <option value="16h55m">16h55m</option>
-                        <option value="17h25m">17h25m</option>
-                        <option value="22h15m">22h15m</option>
-                        
-                    </select>
-                        <input type="text" name="format" value="" id="horario_input"/>    
+                    <input type="time" id="horario" min="00:00" max="23:59" required>
                 </div>
                 <button class="principal__bt-adicionar container__principal principal__botoes" >Adicionar Atividade</button>
                 <button class="principal__bt-excluir-todos container__principal principal__botoes" >Excluir Todos</button>
@@ -63,11 +51,11 @@
         <section class="planner__dias-semana">
             <button class="planner-dia planner__segunda" id="segunda">Segunda-Feira</button>
             <button class="planner-dia planner__terca" id="terca">Terça-Feira</button>
-            <button class="planner-dia planner planner__quarta">Quarta-Feira</button>
-            <button class="planner-dia planner__quinta">Quinta- Feira</button>
-            <button class="planner-dia planner__sexta">Sexta-Feira</button>
-            <button class="planner-dia planner__sabado">Sábado</button>
-            <button class="planner-dia planner__domingo">Domingo</button>
+            <button class="planner-dia planner planner__quarta" id="quarta">Quarta-Feira</button>
+            <button class="planner-dia planner__quinta" id="quinta">Quinta- Feira</button>
+            <button class="planner-dia planner__sexta" id="sexta">Sexta-Feira</button>
+            <button class="planner-dia planner__sabado" id="sabado">Sábado</button>
+            <button class="planner-dia planner__domingo" id="domingo">Domingo</button>
         </section>
         <div class="container__scroll flipped">
             <div class="scroll"></div>
